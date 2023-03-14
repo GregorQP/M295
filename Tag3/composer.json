@@ -14,5 +14,8 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "vlucas/valitron": "^1.4",
+        "steampixel/simple-php-router": "^0.7.1"
+    }
 }

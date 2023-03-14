@@ -7,6 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33
 {
     public static $prefixLengthsPsr4 = array (
+        'l' => 
+        array (
+            'lib\\' => 4,
+        ),
+        'V' => 
+        array (
+            'Valitron\\' => 9,
+        ),
         'G' => 
         array (
             'Gregor\\M295\\' => 12,
@@ -14,9 +22,27 @@ class ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33
     );
 
     public static $prefixDirsPsr4 = array (
+        'lib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/lib',
+        ),
+        'Valitron\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/valitron/src/Valitron',
+        ),
         'Gregor\\M295\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Steampixel' => 
+            array (
+                0 => __DIR__ . '/..' . '/steampixel/simple-php-router/src',
+            ),
         ),
     );
 
@@ -29,6 +55,7 @@ class ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit1b64b785ce54875ea439ac8ca622ae33::$classMap;
 
         }, null, ClassLoader::class);
